@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ai-software-factory/schemas/project_spec.minimal.schema.json",
+  "title": "Project Spec — Minimal (v0.2)",
+  "description": "Versión mínima para arrancar el MVP con landing/corporate estáticas. Solo lo imprescindible para generar el sitio con plantilla. Se ampliará por iteraciones: backend.provider, deployment y template se reincorporan al entrar en apps con backend.",
+  "type": "object",
+  "required": ["meta", "project", "business", "pages"],
+  "additionalProperties": false,
+
+  "properties": {
+
+    "meta": {
+      "type": "object",
+      "description": "Control de versión del spec.",
+      "required": ["status"],
+      "additionalProperties": false,
+      "properties": {
+        "spec_version": { "type": "string", "default": "0.2.0" },
+        "status": { "type": "string", "enum": ["draft", "approved"], "default": "draft" },
+        "owner": { "type": "string" }
+      }
+    },
+
+    "project": {
+      "type": "object",
+      "description": "Identidad del proyecto. Owner: Intake Agent.",
+      "required": ["name", "type"],
+      "additionalProperties": false,
+      "properties": {
+        "name": { "type": "string", "minLength": 2 },
+        "slug": { "type": "string", "pattern": "^[a-z0-9-]+$", "description": "Nombre del repositorio (ej. acme-landing)." },
+        "type": {
+          "type": "string",
+          "enum": ["landing", "corporate"],
+          "description": "Estáticos en el MVP mínimo. El tipo 'app' (con backend) llega en una iteración posterior."
+        }
+      }
+    },
+
+    "business": {
+      "type": "object",
+      "description": "Contexto de negocio. Owner: Intake Agent.",
+      "required": ["industry", "target_audience"],
+      "additionalProperties": false,
+      "properties": {
+        "industry": { "type": "string" },
+        "target_audience": { "type": "string" },
+        "goals": { "type": "array", "items": { "type": "string" }, "description": "Objetivos del sitio (ej. captar leads)." }
+      }
+    },
+
+    "branding": {
+      "type": "object",
+      "description": "Identidad visual mínima. Opcional: si falta, el agente propone valores por defecto. Owner: Intake Agent.",
+      "additionalProperties": false,
+      "properties": {
+        "primary_color": { "type": "string", "description": "Color principal en hex (ej. #1D4ED8)." },
+        "tone": { "type": "string", "description": "Tono de la comunicación (ej. corporativo, cercano)." }
+      }
+    },
+
+    "pages": {
+      "type": "array",
+      "description": "Páginas del sitio. Owner: Architect Agent.",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["name", "sections"],
+        "additionalProperties": false,
+        "properties": {
+          "name": { "type": "string", "description": "Ej. home, about, contact." },
+          "sections": { "type": "array", "items": { "type": "string" }, "minItems": 1, "description": "Bloques de la página en orden (ej. hero, servicios, testimonios, cta)." }
+        }
+      }
+    },
+
+    "contact_form": {
+      "type": "boolean",
+      "default": false,
+      "description": "Único elemento dinámico del MVP mínimo. Si es true, el sitio incluye un formulario de contacto (envío vía servicio externo, sin backend propio)."
+    }
+  }
+}
