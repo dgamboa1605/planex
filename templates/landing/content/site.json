@@ -1,0 +1,208 @@
+{
+  "theme": {
+    "primaryColor": "#1D4ED8"
+  },
+  "seo": {
+    "title": "Acme Consulting · Optimiza tu negocio",
+    "description": "Consultoría estratégica para PYMEs que buscan optimizar procesos y escalar con tecnología."
+  },
+  "navbar": {
+    "logo": "Acme",
+    "links": [
+      {
+        "label": "Servicios",
+        "href": "#servicios"
+      },
+      {
+        "label": "Casos de éxito",
+        "href": "#casos-de-exito"
+      },
+      {
+        "label": "Testimonios",
+        "href": "#testimonios"
+      },
+      {
+        "label": "Contacto",
+        "href": "#contacto"
+      }
+    ]
+  },
+  "footer": {
+    "copyright": "© 2024 Acme Consulting. Todos los derechos reservados.",
+    "links": [
+      {
+        "label": "Política de privacidad",
+        "href": "/privacidad"
+      },
+      {
+        "label": "Términos",
+        "href": "/terminos"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "data": {
+        "title": "Transforma tu empresa con estrategia y tecnología",
+        "subtitle": "Ayudamos a PYMEs a optimizar procesos, reducir costes y escalar con soluciones a medida.",
+        "cta": {
+          "label": "Habla con nosotros",
+          "href": "#contacto"
+        }
+      }
+    },
+    {
+      "type": "servicios",
+      "data": {
+        "headline": "Nuestros servicios",
+        "items": [
+          {
+            "icon": "🔍",
+            "title": "Diagnóstico estratégico",
+            "description": "Analizamos tu empresa e identificamos cuellos de botella y oportunidades de mejora."
+          },
+          {
+            "icon": "⚙️",
+            "title": "Optimización de procesos",
+            "description": "Diseñamos flujos eficientes que reducen tiempos y costes operativos."
+          },
+          {
+            "icon": "🚀",
+            "title": "Transformación digital",
+            "description": "Implementamos herramientas digitales adaptadas a tu negocio y equipo."
+          },
+          {
+            "icon": "🎓",
+            "title": "Formación y acompañamiento",
+            "description": "Capacitamos a tu equipo para que los cambios sean sostenibles en el tiempo."
+          }
+        ]
+      }
+    },
+    {
+      "type": "features",
+      "data": {
+        "headline": "¿Por qué elegirnos?",
+        "items": [
+          {
+            "title": "Experiencia probada",
+            "description": "Más de 10 años ayudando a empresas a crecer de forma sostenible."
+          },
+          {
+            "title": "Enfoque personalizado",
+            "description": "Cada proyecto es único. No vendemos plantillas, diseñamos soluciones."
+          },
+          {
+            "title": "Resultados medibles",
+            "description": "Trabajamos con KPIs claros para que veas el retorno de tu inversión."
+          },
+          {
+            "title": "Acompañamiento continuo",
+            "description": "No desaparecemos tras la entrega. Somos tu socio a largo plazo."
+          }
+        ]
+      }
+    },
+    {
+      "type": "casos-de-exito",
+      "data": {
+        "headline": "Casos de éxito",
+        "items": [
+          {
+            "name": "Distribuidora Norte",
+            "description": "Reducción del 30% en tiempos de entrega tras rediseño logístico."
+          },
+          {
+            "name": "Clínica Salud+",
+            "description": "Digitalización completa de agendas y facturación en 3 meses."
+          },
+          {
+            "name": "Constructora Vives",
+            "description": "Implementación de ERP que unificó 4 departamentos en una plataforma."
+          }
+        ]
+      }
+    },
+    {
+      "type": "testimonios",
+      "data": {
+        "headline": "Lo que dicen nuestros clientes",
+        "items": [
+          {
+            "quote": "Acme transformó nuestra operación. En 6 meses redujimos costes un 25% y nuestro equipo trabaja mucho más enfocado.",
+            "author": "María García",
+            "role": "CEO, Distribuidora Norte"
+          },
+          {
+            "quote": "Profesionales de verdad. Escucharon nuestras necesidades y propusieron soluciones que realmente funcionan.",
+            "author": "Carlos Vives",
+            "role": "Director, Constructora Vives"
+          },
+          {
+            "quote": "La digitalización de nuestra clínica fue un antes y un después. El equipo de Acme nos guió en cada paso.",
+            "author": "Ana López",
+            "role": "Directora médica, Clínica Salud+"
+          }
+        ]
+      }
+    },
+    {
+      "type": "stats",
+      "data": {
+        "items": [
+          {
+            "value": "+50",
+            "label": "Proyectos completados"
+          },
+          {
+            "value": "10+",
+            "label": "Años de experiencia"
+          },
+          {
+            "value": "98%",
+            "label": "Clientes satisfechos"
+          },
+          {
+            "value": "25%",
+            "label": "Reducción media de costes"
+          }
+        ]
+      }
+    },
+    {
+      "type": "faq",
+      "data": {
+        "headline": "Preguntas frecuentes",
+        "items": [
+          {
+            "question": "¿Cuánto dura un proyecto típico?",
+            "answer": "Depende del alcance, pero la mayoría de proyectos de optimización se completan en 3 a 6 meses."
+          },
+          {
+            "question": "¿Trabajáis con empresas pequeñas?",
+            "answer": "Sí, trabajamos con PYMEs desde 5 empleados. El tamaño no importa, la voluntad de mejorar sí."
+          },
+          {
+            "question": "¿Cuál es el coste de vuestros servicios?",
+            "answer": "Cada proyecto se presupuesta a medida. Contáctanos y te enviamos una propuesta sin compromiso."
+          },
+          {
+            "question": "¿Ofrecéis seguimiento post-proyecto?",
+            "answer": "Sí, ofrecemos planes de acompañamiento mensual para garantizar que los cambios se consolidan."
+          }
+        ]
+      }
+    },
+    {
+      "type": "cta-contacto",
+      "data": {
+        "showForm": true,
+        "headline": "¿Listo para transformar tu empresa?",
+        "subtext": "Cuéntanos tu reto. Te respondemos en menos de 24 horas.",
+        "buttonLabel": "Enviar mensaje",
+        "buttonHref": "#contacto"
+      }
+    }
+  ]
+}
