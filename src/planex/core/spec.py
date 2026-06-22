@@ -70,3 +70,7 @@ class ProjectSpec:
 
     def is_approved(self) -> bool:
         return self.status == "approved"
+
+    @property
+    def contact_form(self) -> bool:
+        return bool(self.data.get("contact_form", False))
