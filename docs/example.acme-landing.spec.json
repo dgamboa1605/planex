@@ -1,0 +1,28 @@
+{
+  "meta": {
+    "spec_version": "0.2.0",
+    "status": "draft",
+    "owner": "Dennis Gamboa"
+  },
+  "project": {
+    "name": "Acme Consulting",
+    "slug": "acme-landing",
+    "type": "landing"
+  },
+  "business": {
+    "industry": "Consultoría de negocio",
+    "target_audience": "PYMEs que buscan optimizar procesos",
+    "goals": ["Captar leads vía formulario", "Comunicar servicios"]
+  },
+  "branding": {
+    "primary_color": "#1D4ED8",
+    "tone": "corporativo"
+  },
+  "pages": [
+    {
+      "name": "home",
+      "sections": ["hero", "servicios", "casos-de-exito", "testimonios", "cta-contacto"]
+    }
+  ],
+  "contact_form": true
+}
